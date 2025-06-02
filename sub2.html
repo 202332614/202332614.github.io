@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>색채의 조각</title>  
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.topmenu {
+    background-color: #e0eaff;
+    padding: 10px 0;
+    text-align: center;
+}
+.topmenu a {
+    display: inline-block;
+    padding: 4px 16px;
+    margin: 0 24px;
+    color: #3366cc;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.topmenu a:hover {
+    background-color: #c7dfff;
+    color: #003cff;
+    text-decoration: none;
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+.season-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+.season-btn {
+    width: 80px;
+    height: 80px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.season-btn:hover {
+    border-color: #a3a3a3;
+    transform: scale(1.05);
+}
+
+.season-content {
+    margin-top: 20px;
+    display: none;
+}
+.season-content.active {
+    display: block;
+    text-align: center;
+}
+.season-box {
+    display: inline-block;
+    vertical-align: top;
+}
+.season-box img {
+    width: 300px;
+    height: auto;
+    margin-right: 60px;
+}
+.season-text {
+    display: inline-block;
+    margin-top: 80px;
+    font-size: 1.1em;
+    color: #666;
+    line-height: 2.0em;
+}
+
+footer {
+    background-color: #f3f1f1;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    border-top: 1px solid #ccc;
+}
+.p1 {
+    color: #666;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html">
+        <img src="img/puzzle.jpg" style="height: 40px; display: block; margin: 20px auto 0;">
+    </a>
+    <div class="p1">
+        <p>a piece of color</p>
+    </div>
+</div>
+
+<div class="topmenu">
+    <a href="sub1.html">색으로 보는 나</a>
+    <a href="sub2.html">계절의 색</a>
+    <a href="sub3.html">당신의 컬러 무드</a>
+    <a href="sub4.html">색과 패션</a>
+    <a href="sub5.html">색 감각 테스트</a>
+</div>
+
+<main>
+    <div class="season-buttons">
+        <img src="img/spring.jpg" alt="봄" onclick="showSeason('spring')" class="season-btn">
+        <img src="img/summer.jpg" alt="여름" onclick="showSeason('summer')" class="season-btn">
+        <img src="img/fall.jpg" alt="가을" onclick="showSeason('fall')" class="season-btn">
+        <img src="img/winter.jpg" alt="겨울" onclick="showSeason('winter')" class="season-btn">
+    </div>
+
+    <div id="spring" class="season-content active">
+        <div class="season-box">
+            <img src="img/qha.png">
+        </div>
+        <div class="season-text">
+            <p>화사하고 부드러운 색은<br>햇살 아래 피어나는 꽃과 봄을 연상시킵니다.</p>
+        </div>
+    </div>
+
+    <div id="summer" class="season-content">
+        <div class="season-box">
+            <img src="img/dufma.png">
+        </div>
+        <div class="season-text">
+            <p>맑고 산뜻한 색감은<br>시원한 바닷바람과 쨍한 빛을 담은 여름을 연상시킵니다.</p>
+        </div>
+    </div>
+
+    <div id="fall" class="season-content">
+        <div class="season-box">
+            <img src="img/rkdmf.png" alt="가을 이미지">
+        </div>
+        <div class="season-text">
+            <p>짙고 따뜻한 색조는<br>풍성한 들녘과 낙엽을 가진 가을을 연상시킵니다.</p>
+        </div>
+    </div>
+
+    <div id="winter" class="season-content">
+        <div class="season-box">
+            <img src="img/rudnf.png" alt="겨울 이미지">
+        </div>
+        <div class="season-text">
+            <p>선명하고 차분한 색감은<br>차가운 공기와 고요한 밤을 닮은 겨울을 연상시킵니다.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    산업공학과 202332614 김여진 | 웹프로그래밍 과제
+</footer>
+
+<script>
+function showSeason(season) {
+    const allSeasons = document.querySelectorAll('.season-content');
+    allSeasons.forEach(function(section) {
+        section.classList.remove('active');
+    });
+    document.getElementById(season).classList.add('active');
+}
+</script>
+
+</body>
+</html>

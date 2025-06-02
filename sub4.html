@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>색과 패션</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.topmenu {
+    background-color: #e0eaff;
+    padding: 10px 0;
+    text-align: center;
+}
+.topmenu a {
+    display: inline-block;
+    padding: 4px 16px;
+    margin: 0 24px;
+    color: #3366cc;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.topmenu a:hover {
+    background-color: #c7dfff;
+    color: #003cff;
+    text-decoration: none;
+}
+
+
+main {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+.intro {
+    font-size: 1.0em;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+.radio-option {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    justify-content: center;
+}
+.radio-option img.color {
+    width: 150px;
+    height: auto;
+    border: 2px solid transparent;
+    object-fit: contain;
+}
+input[type="radio"] {
+    display: none;
+}
+.items {
+    display: none;
+}
+input#year2021:checked ~ .radio-group .items-2021,
+input#year2022:checked ~ .radio-group .items-2022,
+input#year2023:checked ~ .radio-group .items-2023,
+input#year2024:checked ~ .radio-group .items-2024,
+input#year2025:checked ~ .radio-group .items-2025 {
+    display: flex;
+}
+.item-images {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-left: 100px;
+    flex-wrap: wrap;
+}
+.item-images img {
+    object-fit: contain;
+    width: 160px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+footer {
+    background-color: #f3f1f1;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    border-top: 1px solid #ccc;
+}
+.p1 {
+    color: #666;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html">
+        <img src="img/puzzle.jpg" style="height: 40px; display: block; margin: 20px auto 0;">
+    </a>
+    <div class="p1">
+        <p>a piece of color</p>
+    </div>
+</div>
+
+<div class="topmenu">
+    <a href="sub1.html">색으로 보는 나</a>
+    <a href="sub2.html">계절의 색</a>
+    <a href="sub3.html">당신의 컬러 무드</a>
+    <a href="sub4.html">색과 패션</a>
+    <a href="sub5.html">색 감각 테스트</a>
+</div>
+
+<main>
+    <div class="intro">
+        <strong>색과 패션의 만남</strong><br>
+        해마다 달라지는 트렌드 컬러에 맞는 아이템을 소개합니다!
+    </div>
+
+    <input type="radio" name="year" id="year2021" checked>
+    <input type="radio" name="year" id="year2022">
+    <input type="radio" name="year" id="year2023">
+    <input type="radio" name="year" id="year2024">
+    <input type="radio" name="year" id="year2025">
+
+    <div class="radio-group">
+        <div class="radio-option">
+            <label for="year2021">
+                <img src="img/2021.png" class="color">
+            </label>
+            <div class="items items-2021">
+                <div class="item-images">
+                    <img src="img/2021q.jpg">
+                    <img src="img/2021w.jpg">
+                    <img src="img/2021e.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="radio-option">
+            <label for="year2022">
+                <img src="img/2022.png" class="color">
+            </label>
+            <div class="items items-2022">
+                <div class="item-images">
+                    <img src="img/2022q.jpg">
+                    <img src="img/2022w.jpg">
+                    <img src="img/2022e.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="radio-option">
+            <label for="year2023">
+                <img src="img/2023.png" class="color">
+            </label>
+            <div class="items items-2023">
+                <div class="item-images">
+                    <img src="img/2023q.jpg">
+                    <img src="img/2023w.jpg">
+                    <img src="img/2023e.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="radio-option">
+            <label for="year2024">
+                <img src="img/2024.png" class="color">
+            </label>
+            <div class="items items-2024">
+                <div class="item-images">
+                    <img src="img/2024q.jpg">
+                    <img src="img/2024w.jpg">
+                    <img src="img/2024e.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="radio-option">
+            <label for="year2025">
+                <img src="img/2025.png" class="color">
+            </label>
+            <div class="items items-2025">
+                <div class="item-images">
+                    <img src="img/2025q.jpg">
+                    <img src="img/2025w.jpg">
+                    <img src="img/2025e.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    산업공학과 202332614 김여진 | 웹프로그래밍 과제
+</footer>
+
+</body>
+</html>

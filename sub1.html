@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>색으로 보는 나</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.topmenu {
+    background-color: #e0eaff;
+    padding: 10px 0;
+    text-align: center;
+}
+.topmenu a {
+    display: inline-block;
+    padding: 4px 16px;
+    margin: 0 24px;
+    color: #3366cc;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.topmenu a:hover {
+    background-color: #c7dfff;
+    color: #003cff;
+    text-decoration: none;
+}
+main {
+    padding: 40px;
+    text-align: center;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.color-img {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #979797;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    color: #666;
+}
+.description {
+    text-align: center;
+    color: #4a4a4a;
+}
+.album-section {
+    text-align: center;              
+    margin-top: 50px;              
+    padding-top: 30px;       
+    border-top: 1px solid #ccc;
+}
+.album-item {
+    display: inline-block;
+    text-align: center;
+    margin: 20px; 
+}
+.album {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #bcbcbc;
+    transition: transform 1s linear;
+    margin: 0 auto;
+}
+.album:hover {
+    transform: rotate(360deg);
+}
+audio {
+    width: 300px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #f3f1f1;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    border-top: 1px solid #ccc;
+}
+.p1 {
+    color: #666;
+    text-align: center;
+}
+.yl {
+    background-color: #fffb91;
+    color: #000000;
+}
+.red {
+    color: #ff0000;
+}
+.ri {
+    text-align: right;
+}
+.le {
+    text-align: left;
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <a href="index.html">
+        <img src="img/puzzle.jpg" style="height: 40px; display: block; margin: 20px auto 0;">
+    </a>
+    <div class="p1">
+        <p>a piece of color</p>
+    </div>
+</div>
+
+    <div class="topmenu">
+        <a href="sub1.html">색으로 보는 나</a>
+        <a href="sub2.html">계절의 색</a>
+        <a href="sub3.html">당신의 컬러 무드</a>
+        <a href="sub4.html">색과 패션</a>
+        <a href="sub5.html">색 감각 테스트</a>
+    </div>
+    <main>
+        <div class="section">
+            <div class="color-img">
+                <img src="img/ry.png" style="height: 100%; width: 100%;">
+            </div>
+
+            <div class="description">
+            <div class="le">
+                <p>저는 낙천적이고 밝은 에너지의 긍정형이자,</p>
+            </div>
+            <div class="ri">
+                <p>열정적이고 주도적인 리더형입니다.</p>
+            </div><br>
+            
+            <p>밝은 에너지를 상징하는 <span class="yl">노란색</span>과 열정을 상징하는 <span class="red">빨간색</span>을 섞어<br>저를 표현해 보았습니다.</p>
+            </div>
+        </div>
+
+        <div class="album-section">
+            <div class="album-item">
+                <div class="album">
+                    <img src="img/blue.png" style="width: 100%; height: 100%;">
+                </div>
+                <audio controls>
+                    <source src="01.mp3" type="audio/mpeg">
+                    브라우저가 오디오 요소를 지원하지 않습니다.
+                </audio>
+                <div class="p1">
+                    내가 좋아하는 푸른 청춘의 노래
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="album">
+                    <img src="img/yellow.png" style="width: 100%; height: 100%;">
+                </div>
+                <audio controls>
+                    <source src="02.mp3" type="audio/mpeg">
+                    브라우저가 오디오 요소를 지원하지 않습니다.
+                </audio>
+                <div class="p1">
+                    내가 좋아하는 긍정적인 노래
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="album">
+                    <img src="img/pink.png" style="width: 100%; height: 100%;">
+                </div>
+                <audio controls>
+                    <source src="03.mp3" type="audio/mpeg">
+                    브라우저가 오디오 요소를 지원하지 않습니다.
+                </audio>
+                <div class="p1">
+                    내가 좋아하는 설레임의 노래
+                </div>
+            </div>
+        </div>
+    </main>
+<footer>
+    산업공학과 202332614 김여진 | 웹프로그래밍 과제
+</footer>
+</body>
+</html> 
